@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.samKong">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#EEEEF4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gambarWisata"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/sam" />
+
+                <TextView
+                    android:id="@+id/txtTempatWisata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="7dp"
+                    android:fontFamily="serif"
+                    android:text="Sam Poo Kong"
+                    android:textColor="#1A80D1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gambarWisata" />
+
+
+                <TextView
+                    android:id="@+id/txtDeskripsiWisata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Klenteng Sam Poo Kong salah satu situs sejarah tentang perkembangan Islam di Semarang yang disebarkan seorang penjelajah dari China bernama Laksamana Cheng Ho. Klenteng Sam Poo Kong terletak di Jalan Simongan Raya nomor 129, Bongsari, Kecamatan Semarang Barat, Kota Semarang. Tidak hanya bernuansa Tionghoa, klenteng ini juga memiliki nuansa Islam dengan corak pada langit-langit berwarna hijau dan terdapat bedug. Klenteng ini merupakan tempat ibadah cocok untuk wisata religi. Namun, tak jarang pengunjung datang untuk berburu foto.\nKlenteng ini biasanya menjadi tempat digelarnya festival,
+                seperti peringatan HUT Sam Poo Kong dan hari raya Imlek. Harga tiket pada hari biasa adalah Rp 8.000 per orang dewasa dan Rp 5.000 per anak. Saat akhir pekan, harga tiket masuk adalah Rp 12.000 per orang dewasa dan Rp 8.000 per anak. Tiket masuk hanya untuk area area wisata, untuk memasuki area ibadah pengunjung akan dikenai biaya tambahan."
+                    android:textColor="#1A80D1"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTempatWisata" />
+
+                <TextView
+                    android:id="@+id/icLok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_lokasi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDeskripsiWisata" />
+
+                <TextView
+                    android:id="@+id/txtLokasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="9dp"
+                    android:justificationMode="inter_word"
+                    android:text="Jl. Pemuda, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132"
+                    android:textColor="#1A80D1"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icLok"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDeskripsiWisata" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

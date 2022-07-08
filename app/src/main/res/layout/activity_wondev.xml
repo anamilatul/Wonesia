@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE8EEF3"
+    android:orientation="vertical"
+    tools:context=".Activity.Wondev">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/wonesia_bg" />
+
+    <TextView
+        android:id="@+id/txtWonesia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:text="Wonesia"
+        android:textAllCaps="false"
+        android:textColor="#2E77AE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+<!--    <WebView-->
+<!--        android:id="@+id/webview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="30dp"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/tvFind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Aplikasi yang berisi tentang wisata bersejarah yang ada di
+Indonesia. Pada aplikasi ini menyediakan berbagai macam informasi mengenai wisata
+bersejarah yang dapat memberikan pengetahuan bagi  wisatawan mengenai wisata di Indonesia. "
+        android:textColor="#3177AC"
+        android:textSize="17sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Person :"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textColor="#2E77AE"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="3dp"
+        android:text="wonesia@gmail.com"
+        android:textColor="#3177AC"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="3dp"
+        android:textColor="#3177AC"
+        android:text="+6285800219833"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="3dp"
+        android:text="Semarang, Jawa Tengah"
+        android:textColor="#3177AC"
+        android:textSize="17sp"/>
+
+</LinearLayout>

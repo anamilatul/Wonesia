@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.monas">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#EEEEF4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gambarWisata"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/monass" />
+
+                <TextView
+                    android:id="@+id/txtTempatWisata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="7dp"
+                    android:fontFamily="serif"
+                    android:text="Monas"
+                    android:textColor="#1A80D1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gambarWisata" />
+
+
+                <TextView
+                    android:id="@+id/txtDeskripsiWisata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:justificationMode="inter_word"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Monumen Nasional adalah sebuah menara berbentuk persegi panjang dengan tinggi 132 meter. Bagian khusus dari bangunan ini yang menjadi ciri khas nya adalah bentuk api yang dilapisi dengan lembaran emas yang terletak di bagian paling atas bangunan. Terdapat sebuah musium di bagian dasar menara ini dengan ukuran 80 x 80 meter. Semua orang bisa mengunjungi musium itu untuk mempelajari sejarah Indonesia. Ada juga sebuah amphiteater dalam bangunan ini yang disebut Ruang Kemerdekaan, ruang ini terletak di bagian cawan Monas dan itu bisa dicapai dengan menggunakan tangga berputar di pintu utara dan selatan. Jika kamu pergi ke sisi selatan bangunan ini, kamu akan menemukan sebuah lift yang bisa digunakan untuk menuju lantai paling atas dimana kita akan menemukan dek pengamatan dan api kemerdekaan."
+                    android:textColor="#1A80D1"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTempatWisata" />
+
+                <TextView
+                    android:id="@+id/icLok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_lokasi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDeskripsiWisata" />
+
+                <TextView
+                    android:id="@+id/txtLokasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="9dp"
+                    android:justificationMode="inter_word"
+                    android:text="Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta"
+                    android:textColor="#1A80D1"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/icLok"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDeskripsiWisata" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

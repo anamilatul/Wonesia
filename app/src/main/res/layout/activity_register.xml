@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE8EEF3"
+    android:paddingRight="40dp"
+    android:paddingLeft="40dp"
+    tools:context=".Activity.Register">
+
+    <TextView
+        android:id="@+id/tvRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/rLayout"
+        android:fontFamily="serif"
+        android:text="Register"
+        android:textColor="#1A80D1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="Your name"
+            android:background="@drawable/costum_input"
+            android:drawableStart="@drawable/costum_account_box"
+            android:drawablePadding="10dp"
+            />
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edtName"
+            android:background="@drawable/costum_input"
+            android:drawableStart="@drawable/costum_ic_person"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp" />
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUsername"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/costum_input"
+            android:drawableStart="@drawable/costum_ic_email"
+            android:drawablePadding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmail"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:background="@drawable/costum_input"
+            android:drawableStart="@drawable/costum_ic_lock"
+            android:drawablePadding="10dp" />
+        <EditText
+            android:id="@+id/edtRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPassword"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:inputType="textPassword"
+            android:hint="Re-Password"
+            android:background="@drawable/costum_input"
+            android:drawableStart="@drawable/costum_ic_lock"
+            android:drawablePadding="10dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rLayout"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/tvLog"
+        android:text="Already have account? "
+        android:textColor="#1A80D1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="2dp"
+        android:text="Login here"
+        android:textColor="#1A80D1"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvyes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#1A80D1"
+        android:text="Register"
+        android:textSize="17sp"
+        app:cornerRadius="20dp" />
+
+</RelativeLayout>

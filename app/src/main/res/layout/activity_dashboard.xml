@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="17dp"
+    android:orientation="vertical"
+    tools:context=".Activity.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgmain">
+
+            <TextView
+                android:id="@id/head2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Let's Get Triv"
+                android:textColor="#ECEEFB"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="172dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/ic_power"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/head2"
+                android:onClick="logout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txthead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="With Wonesia, \n You Can Explore Your Life"
+                android:textColor="#ECEEFB"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/head2" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/ic_round"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txthead" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/wonesia_bg" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:onClick="more"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_triv"
+                    android:padding="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:tint="@color/white"
+                    android:background="@drawable/sp_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Wonesia Tour"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:onClick="history">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_history_note"
+                    android:padding="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:tint="@color/white"
+                    android:background="@drawable/sp_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Wonreview"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:onClick="where"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_location"
+                    android:padding="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:tint="@color/white"
+                    android:background="@drawable/sp_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Wowhere"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="wondev"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_info"
+                    android:padding="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:tint="@color/white"
+                    android:background="@drawable/sp_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Wondev"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/dash1"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/sp_content"-->
+<!--                android:drawableTop="@drawable/ic_triv"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:text="Wonesia Tour"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:onClick="more"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/dash2"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:background="@drawable/sp_content"-->
+<!--                android:drawableTop="@drawable/ic_history_note"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:text="Wonreview"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:onClick="history"-->
+<!--                android:textSize="19sp" />-->
+
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/dash3"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/sp_content"-->
+<!--                android:drawableTop="@drawable/ic_info"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:text="Wondev"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:onClick="more"-->
+<!--                android:textSize="19sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/dash4"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:background="@drawable/sp_content"-->
+<!--                android:drawableTop="@drawable/ic_person_white"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:text="Profil"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:onClick="history"-->
+<!--                android:textSize="19sp" />-->
+
+<!--        </LinearLayout>-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Popular Destination"
+                android:textColor="#7689E4"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="See All"
+                android:layout_marginTop="15dp"
+                android:onClick="more"
+                 />
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dest1"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sp_destination"
+                    android:drawableTop="@drawable/newest"
+                    android:drawablePadding="6dp"
+                    android:padding="18dp"
+                    android:text="Lawang Sewu"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:onClick="lawang"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/dest2"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sp_destination"
+                    android:drawableTop="@drawable/sampooq"
+                    android:drawablePadding="6dp"
+                    android:padding="18dp"
+                    android:text="Sam Poo Kong"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:onClick="sam"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/dest3"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sp_destination"
+                    android:drawableTop="@drawable/monq"
+                    android:drawablePadding="6dp"
+                    android:padding="18dp"
+                    android:text="Monas"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:onClick="monas"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginBottom="7dp">-->
+
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/sp_item">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/lawang_sewu" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="13dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:text="Lawang Sewu"-->
+<!--            android:textColor="#848FCD"-->
+<!--            android:textSize="17sp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView2"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView5"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="13dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:drawableLeft="@drawable/ic_lokasi"-->
+<!--            android:text="Semarang, Jawa Tengah"-->
+<!--            android:textColor="#848FCD"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/sp_item">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgBrown"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/brown_canyon" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtTitle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="13dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:text="Brown Canyoon"-->
+<!--            android:textColor="#848FCD"-->
+<!--            android:textSize="17sp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imgBrown"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/loc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="13dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:drawableLeft="@drawable/ic_lokasi"-->
+<!--            android:text="Semarang, Jawa Tengah"-->
+<!--            android:textColor="#848FCD"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imgBrown"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/btnMore"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:drawableRight="@drawable/ic_next"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="More"-->
+<!--        android:textColor="#5366C6"-->
+<!--        android:onClick="more"-->
+<!--        android:textSize="16sp" />-->
+
+
+
+</ScrollView>

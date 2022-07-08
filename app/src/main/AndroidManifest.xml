@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.anamila.wonesia">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wonesia"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.monas"></activity>
+        <activity android:name=".Activity.samKong" />
+        <activity android:name=".Activity.lawangSewu" />
+        <activity android:name=".Activity.Wowhere" />
+        <activity android:name=".Activity.Wondev" />
+        <activity android:name=".Activity.DetailWonesiaTour" />
+        <activity android:name=".Activity.WonesiaTour" />
+        <activity android:name=".Activity.DetailWonreview" />
+        <activity android:name=".Activity.FormWonreview" />
+        <activity android:name=".Activity.Wonreview" />
+        <activity android:name=".Activity.Dashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.IntroWonesia" />
+        <activity android:name=".Activity.SplashScreen" />
+        <activity android:name=".Activity.Register" />
+        <activity android:name=".Activity.Login" />
+    </application>
+
+</manifest>
